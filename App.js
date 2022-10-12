@@ -1,3 +1,4 @@
+import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -11,8 +12,9 @@ export default function App() {
     { text: 'play on the switch', key: '3' },
   ]);
 
-  return (
+  return (  
     <View style={styles.container}>
+      <StatusBar style="auto" />
       <Header />
       <View style={styles.content}>
         {/* Todo form */}
