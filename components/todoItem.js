@@ -13,9 +13,10 @@ const styles = StyleSheet.create({
     item: {
         padding: 16,
         marginTop: 16,
-        borderColor: '#bbb',
+        borderColor: '#BFCDF2',
         borderWidth: 1,
         borderStyle: 'dashed',
-        borderRadius: 10
+        borderRadius: 10,
+        fontSize: 18
     }
 });
