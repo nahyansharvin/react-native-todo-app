@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { FlatList, StyleSheet, View, Alert } from 'react-native';
+import { FlatList, StyleSheet, View, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
 
 //Components
 import Header from './components/header';
@@ -38,6 +38,9 @@ export default function App() {
   }
 
   return (
+    <TouchableWithoutFeedback onPress={() => {
+      Keyboard.dismiss();
+    }}>
     <View style={styles.container}>
       <StatusBar style="auto" />
       <Header />
@@ -54,6 +57,7 @@ export default function App() {
 
       </View>
     </View>
+    </TouchableWithoutFeedback>
   );
 }
 
