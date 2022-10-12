@@ -21,28 +21,28 @@ export default function App() {
   }
 
   const submitHandler = (text) => {
-    if(text){
+    if (text) {
       setTodos((prevTodos) => {
         return [
           { text: text, key: Math.random().toString() },
           ...prevTodos
         ]
       })
-    }else{
+    } else {
       Alert.alert('Oops!', 'You need to enter something', [
-        {text: 'Okeei'}
+        { text: 'Okeei' }
       ]);
     }
 
-    
+
   }
 
-  return (  
+  return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       <Header />
       <View style={styles.content}>
-      <AddTodo submitHandler={submitHandler} />
+        <AddTodo submitHandler={submitHandler} />
         <View style={styles.list}>
           <FlatList
             data={todos}
@@ -51,7 +51,7 @@ export default function App() {
             )}
           />
         </View>
-        
+
       </View>
     </View>
   );
@@ -60,10 +60,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#EDF4FB',
   },
   content: {
     padding: 20,
     flex: 1,
   },
+  list: {
+    marginTop: 20,
+    flex: 1,
+  }
 });
