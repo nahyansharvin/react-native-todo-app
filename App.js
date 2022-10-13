@@ -11,7 +11,7 @@ export default function App() {
   const [todos, setTodos] = useState([
     { text: 'Manga parikka', key: '1' },
     { text: 'create an app', key: '2' },
-    { text: 'Pattishow', key: '3' },
+    { text: 'Pattishow ida', key: '3' },
   ]);
 
   const pressHandler = (key) => {

@@ -28,6 +28,6 @@ const styles = StyleSheet.create({
         paddingHorizontal: 8,
         paddingVertical: 6,
         borderBottomWidth: 1,
-        borderBottomColor: '#ddd'
+        borderBottomColor: '#99aec7'
     }   
 });
