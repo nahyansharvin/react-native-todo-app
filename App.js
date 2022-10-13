@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#EDF4FB',
   },
   content: {
-    padding: 20,
+    padding: 30,
     flex: 1,
   },
   list: {
